@@ -1,3 +1,4 @@
+'''
 #!/usr/bin/python3
 
 # Examples for dictionary
@@ -131,3 +132,4 @@ print(emp_dict)
 # Delete the dictionary itself and printing it would throw an error
 del emp_dict
 # print(emp_dict)
+'''
