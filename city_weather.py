@@ -16,12 +16,6 @@ city_name = input("Please Enter Your City Name: ")
 # Get weather details by city name: api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
 # There are many other things, treat those like your homework
 
-# Get the time from utc and timezone values provided
-# pass the value as utc + timezone (both are UTC timestamp)
-def time_from_utc_with_timezone(utc_with_tz):
-    local_time = datetime.utcfromtimestamp(utc_with_tz)
-    return local_time.time()
-
 # API url
 weather_url = 'http://api.openweathermap.org/data/2.5/weather?q=' + city_name + '&appid='+api_key
 
@@ -51,16 +45,12 @@ if weather_data['cod'] == 200:
     cloudy = weather_data['clouds']['all']
     description = weather_data['weather'][0]['description']
 
-    sunrise_time = time_from_utc_with_timezone(sunrise + timezone)
-    sunset_time = time_from_utc_with_timezone(sunset + timezone)
-
     print(f"Weather Information for City: {city_name}")
     print(f"Temperature (Celsius): {temp}")
     print(f"Feels like in (Celsius): {feels_like_temp}")
     print(f"Pressure: {pressure} hPa")
     print(f"Humidity: {humidity}%")
     print("Wind speed: {0:.2f} km/hr".format(wind_speed))
-    print(f"Sunrise at {sunrise_time} and Sunset at {sunset_time}")
     print(f"Cloud: {cloudy}%")
     print(f"Info: {description}")
 else:
