@@ -6,5 +6,9 @@ def fahr_to_cel(fahrenheit):
 
 fahr = int(input('Enter temperature in Fahrenheit please: '))
 
-print(fahr_to_cel(fahr))
+try:
+    print(fahr_to_cel(fahr))
+catch ArithmeticException ex:
+    exit("I am sorry. Only real numbers are allowed")
+    
 
