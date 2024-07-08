@@ -45,6 +45,12 @@ if weather_data['cod'] == 200:
     cloudy = weather_data['clouds']['all']
     description = weather_data['weather'][0]['description']
 
+    # Get the time from utc and timezone values provided
+    # pass the value as utc + timezone (both are UTC timestamp)
+    def time_from_utc_with_timezone(utc_with_tz):
+        local_time = datetime.utcfromtimestamp(utc_with_tz)
+        return local_time.time()
+    
     print(f"Weather Information for City: {city_name}")
     print(f"Temperature (Celsius): {temp}")
     print(f"Feels like in (Celsius): {feels_like_temp}")
@@ -53,7 +59,10 @@ if weather_data['cod'] == 200:
     print("Wind speed: {0:.2f} km/hr".format(wind_speed))
     print(f"Cloud: {cloudy}%")
     print(f"Info: {description}")
+    print(f"Sunrise at {time_from_utc_with_timezone(sunrise + timezone)}")
+    print(f"Sunset at {time_from_utc_with_timezone(sunset + timezone)}")
 else:
     print(f"City Name: {city_name} was not found!")
+
 
 
