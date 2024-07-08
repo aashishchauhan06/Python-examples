@@ -6,6 +6,7 @@ from datetime import datetime
 
 # asking the user for api key
 api_key = input("Please Enter Your API: ")
+print("api_key secret:", api_key)
 
 #asking the user for city name
 city_name = input("Please Enter Your City Name: ")
