@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Added for testing, was blank line before
+
 # Function to check If a number is prime against already given prime number list
 def prime(num, primes):
     # loop to test if num is prime number against given primes list
