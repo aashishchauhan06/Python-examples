@@ -23,3 +23,4 @@ else:
     else:
         print(num, 'is a prime number')
 
+
