@@ -53,6 +53,7 @@ if weather_data['cod'] == 200:
     # pass the value as utc + timezone (both are UTC timestamp)
     def time_from_utc_with_timezone(utc_with_tz):
         local_time = datetime.utcfromtimestamp(utc_with_tz)
+        #catch exception here
         return local_time.time()
     
     print(f"Weather Information for City: {city_name}")
