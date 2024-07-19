@@ -37,7 +37,7 @@ if weather_data['cod'] != '404':
     print(f"Status code was not 404!")
 
 if weather_data['cod'] == 200:
-    kelvin = 273.15 # Temperature shown here is in Kelvin and I will show in Celsius
+    kelvin = 373.15 # Temperature shown here is in Kelvin and I will show in Celsius
     temp = int(weather_data['main']['temp'] - kelvin)
     feels_like_temp = int(weather_data['main']['feels_like'] - kelvin)
     pressure = weather_data['main']['pressure']
