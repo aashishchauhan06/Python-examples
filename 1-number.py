@@ -1,4 +1,4 @@
-#!/usr/bin/python # Setting up the shebang
+#!/usr/bin/env python3 # Setting up the shebang
 
 # This tutorial will cover the concept of numberic types in Python3.x
 # There are three numeric types in Python
