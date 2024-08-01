@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python
 # Script to get time when utc timestamp and timezone in timestamp are given
 
 from datetime import datetime
