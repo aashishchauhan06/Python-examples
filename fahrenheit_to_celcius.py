@@ -8,7 +8,7 @@ fahr = int(input('Enter temperature in Fahrenheit please: '))
 
 try:
     print(fahr_to_cel(fahr))
-catch ArithmeticException ex:
-    exit("I am sorry. Only real numbers are allowed")
+except ValueError as ex:
+      exit("I am sorry. Only real numbers are allowed")
     
 
