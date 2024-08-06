@@ -18,6 +18,7 @@ city_name = input("Please Enter Your City Name: ")
 
 # Get the time from utc and timezone values provided
 # pass the value as utc + timezone (both are UTC timestamp)
+# utility function
 def time_from_utc_with_timezone(utc_with_tz):
     local_time = datetime.utcfromtimestamp(utc_with_tz)
     return local_time.time()
