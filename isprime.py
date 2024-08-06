@@ -5,11 +5,7 @@
 # If a number is divisible by only 1 and number itself, then it is a prime number
 
 # Get input from user, as input is string, you would need to typecast it as an int
-try:
-    num = int(input('Enter a number: '))
-except:
-    exit("Only integer please!")
-
+num = int(input('Enter a number: '))
 
 # Check if number is negative
 if num < 0:
