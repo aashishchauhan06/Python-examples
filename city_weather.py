@@ -33,7 +33,7 @@ weather_data = response.json()
 # 'sunrise': 1614215240, 'sunset': 1614257484}, 'timezone': 19800, 'id': 1269843, 'name': 'Hyderabad', 'cod': 200}
 # weather_data['cod'] == '404' means city not found
 
-if weather_data['cod'] != '404':
+if weather_data['cod'] != '400':
     print(f"Status code was not 404!")
 
 if weather_data['cod'] == 200:
