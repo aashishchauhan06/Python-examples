@@ -51,8 +51,8 @@ if weather_data['cod'] == 200:
     cloudy = weather_data['clouds']['all']
     description = weather_data['weather'][0]['description']
 
-    sunrise_time = time_from_utc_with_timezone(sunrise + timezone)
-    sunset_time = time_from_utc_with_timezone(sunset + timezone)
+    sunrise_time = _time_from_utc_with_timezone(sunrise + timezone)
+    sunset_time = _time_from_utc_with_timezone(sunset + timezone)
 
     print(f"Weather Information for City: {city_name}")
     print(f"Temperature (Celsius): {temp}")
