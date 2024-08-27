@@ -25,6 +25,10 @@ try:
 except:
     exit("Must be an integer only")
 
-primes_list = n_primes(nprimes)
-print(primes_list)
+
+if nprimes < 0:
+    exit("Number must be postive one!")
+else:
+    primes_list = n_primes(nprimes)
+    print(primes_list)
 
