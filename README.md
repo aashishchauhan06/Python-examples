@@ -1,6 +1,6 @@
 # Python-examples
 
-password = india
+password = "india"
 
 if (password == india) {
 echo "Matched"
