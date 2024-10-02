@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python
 
 # adding test comment
 # This tutorial will cover the concept of numeric type conversion in Python3.x
