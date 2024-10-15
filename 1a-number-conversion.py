@@ -26,6 +26,6 @@ print(positive_float)
 print(negative_int) 
 print(complex_from_int)  
 
-print(instanceOf(positive_float)) 
+print(type(positive_float)) 
 print(type(negative_int)) 
 print(type(complex_from_int))
