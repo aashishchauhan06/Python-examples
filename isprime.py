@@ -9,7 +9,7 @@ num = int(input('Enter a number: '))
 
 # Check if number is negative
 if num < 0:
-    exit('Number should be positive')
+    raise ValueError('Number should be positive')
 # If number is positive then write the logic of prime number
 else:
     for prime in range(2, num):
