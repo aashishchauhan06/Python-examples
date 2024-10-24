@@ -5,7 +5,8 @@ import json
 from datetime import datetime
 
 def time_from_utc_with_timezone(utc_with_tz):
-    local_time = datetime.utcfromtimestamp(utc_with_tz)
+    from datetime import timezone
+    local_time = datetime.fromtimestamp(utc_with_tz, tz=timezone.utc)
     return local_time.time()
     
 # asking the user for api key
