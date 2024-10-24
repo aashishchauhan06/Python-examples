@@ -31,12 +31,6 @@ response = requests.get(weather_url)
 # response will be in json format and we need to change it to pythonic format
 weather_data = response.json()
 
-# Make sure you get 200 as response to proceed
-# SAMPLE DATA: {'coord': {'lon': 78.4744, 'lat': 17.3753}, 'weather': [{'id': 800, 'main': 'Clear', 'description': 'clear sky', 'icon': '01n'}],
-# 'base': 'stations', 'main': {'temp': 293.04, 'feels_like': 293.44, 'temp_min': 291.15, 'temp_max': 294.82, 'pressure': 1015, 'humidity': 72},
-# 'visibility': 6000, 'wind': {'speed': 1.58, 'deg': 163}, 'clouds': {'all': 0}, 'dt': 1614196800, 'sys': {'type': 1, 'id': 9213, 'country': 'IN',
-# 'sunrise': 1614215239, 'sunset': 1614257484}, 'timezone': 19800, 'id': 1269843, 'name': 'Hyderabad', 'cod': 200}
-# weather_data['cod'] == '404' means city not found
 
 if weather_data['cod'] == 200 or weather_data['cod'] == 202:
     kelvin = 273.15 # Temperature shown here is in Kelvin and I will show in Celsius
