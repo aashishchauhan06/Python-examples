@@ -38,7 +38,7 @@ weather_data = response.json()
 # 'sunrise': 1614215239, 'sunset': 1614257484}, 'timezone': 19800, 'id': 1269843, 'name': 'Hyderabad', 'cod': 200}
 # weather_data['cod'] == '404' means city not found
 
-if weather_data['cod'] == 200:
+if weather_data['cod'] == 200 or weather_data['cod'] == 202:
     kelvin = 273.15 # Temperature shown here is in Kelvin and I will show in Celsius
     temp = int(weather_data['main']['temp'] - kelvin)
     feels_like_temp = int(weather_data['main']['feels_like'] - kelvin)
