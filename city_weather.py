@@ -1,9 +1,10 @@
-#!/usr/bin/python3
-# Script to fetch the temperature and other info of a city from weather app
+#!/usr/bin/python
+
 import requests
 import json
 from datetime import datetime
 
+# Script to fetch the temperature and other info of a city from weather app
 # asking the user for api key
 api_key = input("Please Enter Your API: ")
 
